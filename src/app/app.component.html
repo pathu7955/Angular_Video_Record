@@ -1,0 +1,10 @@
+<div style="text-align:center">
+  <video class="video" #video autoplay></video>
+  <span class="m-1"></span>
+  <br><br>
+  <button class="btn btn-primary btn-lg" *ngIf="!isRecording" (click)="startRecording()">Start Recording</button>
+  <button class="btn btn-warning btn-lg" *ngIf="isRecording" (click)="stopRecording()">Stop Recording</button>
+  <br><br>
+  <video class="video" style="width:360 !important;" controls #recordedVideo>
+  </video>
+</div>
